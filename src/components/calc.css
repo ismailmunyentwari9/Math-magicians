@@ -1,0 +1,14 @@
+.calc-container {
+  width: 30%;
+  height: auto;
+  border: 4px solid black;
+  display: flex;
+  flex-direction: column;
+  margin: 5% 30%;
+  border-radius: 12px;
+}
+
+.output {
+  background-color: #1a0808;
+  height: 12vh;
+}
