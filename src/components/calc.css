@@ -1,14 +1,16 @@
 .calc-container {
-  width: 30%;
+  width: 36%;
   height: auto;
-  border: 4px solid black;
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
   margin: 5% 30%;
   border-radius: 12px;
 }
 
 .output {
-  background-color: #1a0808;
+  background-color:rgb(162, 154, 154);
+  width:97%;
   height: 12vh;
 }

@@ -6,7 +6,7 @@ function calculator() {
     <div className="calc-container">
 
       <div className="output">
-        <div className="prev-operand" />
+
         <div className="current-operand" />
       </div>
       <Buttons />

@@ -1,15 +1,13 @@
-.buttons {
-  background: linear-gradient(rgba(206, 7, 217, 0.89), rgba(231, 230, 213, 0.89));
-}
 
 button {
+  padding:30px;
   width: 24%;
-  margin: 3px 1px;
-  font-size: 24px;
+  margin: 0.5px;
+  border:none;
+  font-size: 20px;
   font-weight: 500;
-  border-radius: 4rem;
   height: 7vh;
-  background-color: #fff;
+  background-color: hsl(0, 8%, 90%);
 }
 
 button:nth-child(4),
@@ -21,5 +19,5 @@ button:nth-child(19) {
 }
 
 button:nth-child(17) {
-  width: 50%;
+  width: 48.5%;
 }
