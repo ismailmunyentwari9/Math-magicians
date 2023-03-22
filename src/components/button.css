@@ -1,0 +1,23 @@
+
+button {
+  padding: 30px;
+  width: 24%;
+  margin: 0.5px;
+  border: none;
+  font-size: 20px;
+  font-weight: 500;
+  height: 7vh;
+  background-color: hsl(0, 8%, 90%);
+}
+
+button:nth-child(4),
+button:nth-child(8),
+button:nth-child(12),
+button:nth-child(16),
+button:nth-child(19) {
+  background-color: #ffa600c9;
+}
+
+button:nth-child(17) {
+  width: 48.5%;
+}
