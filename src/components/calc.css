@@ -13,4 +13,8 @@
   background-color: rgb(162, 154, 154);
   width: 97%;
   height: 12vh;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  font-size: 45px;
 }
