@@ -1,12 +1,24 @@
 .calc-container {
-  width: 36%;
   height: auto;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  margin: 5% 30%;
+  justify-content: space-between;
   border-radius: 12px;
+  margin-top: 5%;
+}
+
+.lets-do {
+  font-size: 23px;
+  margin-left: 5%;
+  font-weight: bold;
+}
+
+.calc-shape {
+  width: 40%;
+  margin-right: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .output {
@@ -17,4 +29,31 @@
   justify-content: end;
   align-items: end;
   font-size: 45px;
+}
+
+.home-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.qoute-class {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.qoute-class p {
+  color: #000;
+  width: 40%;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.loads {
+  font-weight: 600;
+  font-size: 25px;
+  color: #000 !important;
+  margin-top: 0;
 }

@@ -12,11 +12,15 @@ function Calculator() {
 
   return (
     <div className="calc-container">
-
-      <div className="output">
-        <ScreenValue result={result.next || result.total || '0'} />
+      <div className="lets-do">
+        Let us do some math!
       </div>
-      <Buttons handleClick={handleClick} />
+      <div className="calc-shape">
+        <div className="output">
+          <ScreenValue result={result.next || result.total || '0'} />
+        </div>
+        <Buttons handleClick={handleClick} />
+      </div>
 
     </div>
   );
