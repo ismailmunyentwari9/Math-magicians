@@ -23,7 +23,6 @@
 
 .output {
   background-color: rgb(162, 154, 154);
-  width: 97%;
   height: 12vh;
   display: flex;
   justify-content: end;

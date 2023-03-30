@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import './calc.css';
 
 const Qoutes = () => {
   const [loading, setLoading] = useState(true);
@@ -27,19 +26,41 @@ const Qoutes = () => {
   }, []);
 
   if (loading) {
-    return <div className="loads">Loading...</div>;
+    return (
+      <div style={{
+        textAlign: 'center', fontSize: '1.5rem', margin: '2rem 0', color: 'white', backgroundColor: 'gray', padding: '10px',
+      }}
+      >
+        Loading...
+      </div>
+    );
   }
 
   if (error) {
-    return <div>{error}</div>;
+    return (
+      <div style={{
+        textAlign: 'center', fontSize: '1.5rem', margin: '2rem 0', color: 'white', backgroundColor: 'red', padding: '10px',
+      }}
+      >
+        {error}
+      </div>
+    );
   }
 
   return (
     qouteData.map((qouteItems) => (
-      <div className="qoute-class" key={qouteData.length}>
-        <p>
+      <div
+        style={{
+          border: '1px solid #ccc', padding: '1rem', margin: '1rem 0', backgroundColor: 'lightgray',
+        }}
+        key={qouteData.length}
+      >
+        <p style={{ fontStyle: 'italic', marginBottom: '1rem', fontSize: '1.5rem' }}>
           {qouteItems.quote}
+        </p>
+        <p style={{ textAlign: 'right', fontWeight: 'bold', fontSize: '1.3rem' }}>
           -
+          {' '}
           {qouteItems.author}
         </p>
       </div>

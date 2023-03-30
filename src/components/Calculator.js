@@ -1,4 +1,3 @@
-import './calc.css';
 import React, { useState } from 'react';
 import Calculate from './logic/calculate';
 import Buttons from './buttons';
@@ -11,18 +10,18 @@ function Calculator() {
   };
 
   return (
-    <div className="calc-container">
-      <div className="lets-do">
+    <div style={{ backgroundColor: '#E0E0E0', padding: '20px' }}>
+      <div style={{ color: 'white', fontSize: '24px', marginBottom: '20px' }}>
         Let us do some math!
       </div>
-      <div className="calc-shape">
-        <div className="output">
+      <div style={{ backgroundColor: 'white', padding: '20px', borderRadius: '10px' }}>
+        <div style={{ marginBottom: '20px' }}>
           <ScreenValue result={result.next || result.total || '0'} />
         </div>
         <Buttons handleClick={handleClick} />
       </div>
-
     </div>
   );
 }
+
 export default Calculator;
