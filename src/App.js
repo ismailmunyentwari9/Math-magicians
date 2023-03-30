@@ -1,65 +1,33 @@
-import React, { useState } from 'react';
-import './App.css';
+import { Route, Routes, Link } from 'react-router-dom';
 import Calculator from './components/Calculator';
 import Home from './components/Home';
 import Qoutes from './components/Qoute';
 
 function App() {
-  const [showHome, setHome] = useState(true);
-  const [showCalc, setCalc] = useState(false);
-  const [showQoute, setQoute] = useState(false);
-
-  const handleHomeClick = () => {
-    setHome(true);
-    setCalc(false);
-    setQoute(false);
-  };
-
-  const handleCalcClick = () => {
-    setCalc(true);
-    setHome(false);
-    setQoute(false);
-  };
-
-  const handleQouteClick = () => {
-    setCalc(false);
-    setHome(false);
-    setQoute(true);
-  };
-
   return (
-    <div className="App">
-      <div className="Nav-bar">
-        <div className="project-name">
+    <div style={{ maxWidth: '800px', margin: '0 auto', fontFamily: 'Arial, sans-serif' }}>
+      <div style={{
+        display: 'flex', justifyContent: 'space-between', alignItems: 'center', backgroundColor: '#f2f2f2', padding: '10px 20px',
+      }}
+      >
+        <div style={{ fontWeight: 'bold' }}>
           <span>Math Magicians</span>
         </div>
-
-        <ul>
-          <li><button type="button" onClick={handleHomeClick}>Home</button></li>
-
-          <li><button type="button" onClick={handleCalcClick}>Calculator</button></li>
-          <li><button type="button" onClick={handleQouteClick}>Qoute</button></li>
-
+        <ul style={{
+          display: 'flex', listStyleType: 'none', margin: 0, padding: 0,
+        }}
+        >
+          <li style={{ marginRight: '10px' }}><Link to="/" style={{ color: '#333', textDecoration: 'none' }}>Home</Link></li>
+          <li style={{ marginRight: '10px' }}><Link to="/calculator" style={{ color: '#333', textDecoration: 'none' }}>Calculator</Link></li>
+          <li><Link to="/Qoutes" style={{ color: '#333', textDecoration: 'none' }}>Qoute</Link></li>
         </ul>
       </div>
 
-      {showHome && (
-        <div className="Home-section">
-          <Home />
-        </div>
-      )}
-
-      {showCalc && (
-        <div className="cal-section">
-          <Calculator />
-        </div>
-      )}
-
-      {showQoute && (
-        <div className="Qoute-section">
-          <Qoutes />
-        </div>
-      )}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/calculator" element={<Calculator />} />
+        <Route path="/Qoutes" element={<Qoutes />} />
+      </Routes>
     </div>
   );
 }

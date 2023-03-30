@@ -7,7 +7,6 @@ button {
   font-size: 20px;
   font-weight: 500;
   height: 7vh;
-  background-color: hsl(0, 8%, 90%);
 }
 
 button:nth-child(4),
