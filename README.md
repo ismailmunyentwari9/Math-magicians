@@ -25,7 +25,7 @@
 **[Math_Magician]** The Math Magician project is a fun and interactive way to help children improve their math skills. It's a web-based application that provides simple math problems for children to solve in a game-like setting.
 
 ## 🛠 Built With <a name="HTML, CSS and JAVASCRIPT"></a>
-<img src="calc.png" alt="Calculator Screenshot" width="600" />
+<img src="calc (2).png" alt="Calculator Screenshot" width="600" />
 
 
 ### Tech Stack <a name="HTML, CSS and JAVASCRIPT"></a>
